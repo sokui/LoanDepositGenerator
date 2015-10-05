@@ -1,0 +1,8 @@
+D:\visual studio 2010\Projects\LoanDepositGenerator\LoanDepositGenerator\obj\x86\Debug\LoanDepositGenerator.csproj.ResolveComReference.cache
+D:\visual studio 2010\Projects\LoanDepositGenerator\LoanDepositGenerator\bin\Debug\LoanDepositGenerator.exe
+D:\visual studio 2010\Projects\LoanDepositGenerator\LoanDepositGenerator\bin\Debug\LoanDepositGenerator.pdb
+D:\visual studio 2010\Projects\LoanDepositGenerator\LoanDepositGenerator\obj\x86\Debug\LoanDepositGenerator.generatorForm.resources
+D:\visual studio 2010\Projects\LoanDepositGenerator\LoanDepositGenerator\obj\x86\Debug\LoanDepositGenerator.Properties.Resources.resources
+D:\visual studio 2010\Projects\LoanDepositGenerator\LoanDepositGenerator\obj\x86\Debug\LoanDepositGenerator.csproj.GenerateResource.Cache
+D:\visual studio 2010\Projects\LoanDepositGenerator\LoanDepositGenerator\obj\x86\Debug\LoanDepositGenerator.exe
+D:\visual studio 2010\Projects\LoanDepositGenerator\LoanDepositGenerator\obj\x86\Debug\LoanDepositGenerator.pdb
