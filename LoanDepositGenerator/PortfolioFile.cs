@@ -13,7 +13,7 @@ namespace LoanDepositGenerator
     class PortfolioFile
     {
         private static readonly string[] columnNames = { "帐号", "序号", "帐户名", "客户号", "产品码", "货币", "余额或本金", "余额或本金的等值港币", "余额或本金的科目号", "AO Name", "Branch", "System Date", "交易日", "起息日", "到期日", "当前利率%", "Interest Income per day", "FTP %", "FTP Amount per day", "计息基准天数", "Interest Income per dY", "FTP Amount in HKD Equ", "", "Interest Income in HKD Equ" };
-        private static readonly string[] loanProducts = { "BLFTDS", "BLFTDD", "BLRVDS", "LNGBDBDD", "LNGBDBDM", "SYFTDD", "OWDBS", "LCPPNDD", "ADEBDA", "EX-REFI", "ADTRIW", "IM-REFI", "TT-IMPDD" };
+        private static readonly string[] loanProducts = { "BLFTDS", "BLFTDD", "BLRVDS", "LNGBDBDD", "LNGBDBDM", "SYFTDD", "OWDBS", "LCPPNDD", "ADEBDA", "EX-REFI", "ADTRIW", "IM-REFI", "TT-IMPDD", "BLRVDD" };
         private static readonly string[] depositProducts = { "DDPCUR01", "DDPSAV01", "MMFCUD", "PDP" };
         private static Dictionary<string, double> allSpecialRates = initializeSpecialRates();
         private static Dictionary<string, double> EURSpecialRates = initializeEURSpecialRates();
@@ -402,7 +402,7 @@ namespace LoanDepositGenerator
                 }
                 if (daySpan > rateTable[0, i] && daySpan < rateTable[0, i + 1])
                 {
-                    (row.Cells[1, 18] as Excel.Range).Value2 = daySpan > (rateTable[0, i] + rateTable[0, i + 1]) / 2 ? rateTable[1, i + 1] : rateTable[1, i];
+                    (row.Cells[1, 18] as Excel.Range).Value2 = daySpan >= (rateTable[0, i] + rateTable[0, i + 1]) / 2 ? rateTable[1, i + 1] : rateTable[1, i];
                     return;
                 }
             }
