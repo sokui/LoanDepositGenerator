@@ -17,7 +17,7 @@ namespace LoanDepositGenerator
         public static readonly string[] effectiveCurrencies = { "USD", "HKD", "CNY", "EUR" };
         private static readonly int[] effectiveCurrencyColumns = { 3, 7, 11, 16 };
         private static readonly int rateBeginRowNumber = 7;
-        private static readonly double[] basicSpans = { 1, 7, 14, 30, 60, 90, 120, 150, 365 / 2, 365 * 4 / 3, 365, 365 * 2, 365 * 3, 365 * 4, 365 * 5 };
+        private static readonly double[] basicSpans = { 1, 7, 14, 30, 60, 90, 120, 150, 365 / 2, 365 * 3 / 4, 365, 365 * 2, 365 * 3, 365 * 4, 365 * 5 };
         //public static string fileNamePattern = @"Daily rate table[1-9][0-9][0-9][0-9][0-1]?[0-9][0-3]?[0-9]\.xlsx?";
 
 
